@@ -1,0 +1,349 @@
+@charset "UTF-8";
+body {
+  font-family: "Noto Serif JP", serif;
+  font-family: "Praise", cursive;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.header_all {
+  width: 100%;
+  background-color: rgb(247, 236, 220);
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header_nav ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.header_nav ul li {
+  display: table-cell;
+}
+
+.header_nav ul li a {
+  display: block;
+  margin: 25px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header_nav ul li a:hover {
+  color: #888;
+  border-bottom: solid 2px #ccc;
+}
+
+.header_nav ul li a span {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.top_all {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+
+  overflow: hidden;
+  background: url(https://publicdomainq.net/images/201711/22s/publicdomainq-0015853esq.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.top_all::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 3, 3, 0.3);
+}
+
+.top_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:solid 4px rgba(158, 142, 093,0.5);
+  /* vertical-align: middle; */
+  /* align-items: center; */
+  /* padding: 100px 200px; */
+  width: 90%;
+  height: 70vh;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.title-text h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.title-text p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.section {
+  padding: 150px;
+  border-top: solid 3px rgb(158, 142, 093);
+}
+
+.section:nth-of-type(odd) {
+  background-color:white;
+}
+
+.section:nth-of-type(even) {
+  background-color: rgb(247, 236, 220);
+}
+
+.about_img {
+  position: relative;
+}
+
+.about_img:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: url(https://media.istockphoto.com/vectors/hand-sketched-whiskey-bottle-and-glass-vector-illustration-of-scotch-vector-id684955478) no-repeat
+    center;
+  background-size: cover;
+}
+
+.concept_img {
+  position: relative;
+}
+
+.concept_img:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  background: url(https://www.s-hoshino.com/f_photo/bar/ba_058.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.descript {
+  width: 40%;
+  height: 50%;
+}
+
+.descript_right {
+  margin-left: 60%;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  line-height: 1.4;
+  font-size: 40px;
+  font-weight: bold;
+  color: #555;
+  border-left: solid 4px rgb(158, 142, 093);
+}
+
+.title span {
+  display: block;
+  font-size: 20px;
+}
+
+.txt h3 {
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.txt p {
+  color: #555;
+}
+
+.txt p strong {
+  font-weight: bold;
+  color: #555;
+  background: linear-gradient(transparent 60%, rgb(158, 142, 093));
+}
+
+.frame {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+
+.txt h3 span {
+  display: block;
+  font-size: 20px;
+}
+
+.sub_title {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.sub_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  background-color: #333;
+  width: 40%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.sub_title span {
+  position: relative;
+  padding-right: 10px;
+}
+
+.photo {
+  width: 340px;
+  height: 220px;
+}
+
+.price {
+  font-size: 17px;
+  text-align: center;
+  color: #803333;
+  padding-top: 15px;
+}
+
+.price span {
+  margin-right: 5px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.price em {
+  font-style: italic;
+  font-size: 45px;
+}
+
+.frame_profile {
+  display: inline-table;
+  width: 35%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro_img {
+  padding-right: 40px;
+}
+
+.profile_bg {
+  background-color: #fff;
+  height: 460px;
+}
+
+.txt table th {
+  padding-right: 10px;
+  border-right: solid 3px rgb(158, 142, 093);
+}
+
+.txt table td {
+  padding-left: 10px;
+}
+
+.blog_block {
+  display: inline-block;
+  margin: 5px;
+}
+
+.blog_body {
+  margin-top: 10px;
+}
+
+.blog_body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+}
+
+.blog_body p {
+  font-size: 14px;
+  color: #555;
+}
+
+.button {
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(158, 142, 093);
+  border-radius: 10px;
+  width: 25%;
+  margin: 0 auto 150px;
+}
+
+.bottom {
+  background-color: #6e6019;
+  padding: 30px 0;
+  text-align: center;
+  color: #eee;
+}
+
+.footer_logo {
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer_logo img {
+  width: 200px;
+}
+.footer_sns {
+  text-align: center;
+}
+
+.footer_li {
+  list-style: none;
+}
+
+.footer_sns li a img {
+  width: 70px;
+}
